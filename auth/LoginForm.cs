@@ -19,8 +19,8 @@ namespace auth
 
         private void login_Load(object sender, EventArgs e)
         {
-            EmailRequired.Visible = false;
-            PasswordRequired.Visible = false;
+            this.Select();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,23 +34,19 @@ namespace auth
         private void LoginButton_Click(object sender, EventArgs e)
         {
             bool isValid = true;
-            if (textBox1.Text == "")
+            if (EmailTextBox.Text == "")
             {
-                EmailRequired.Visible = true;
+             
                 isValid = false;
             }
-            else {
-                EmailRequired.Visible = false;
-            }
-            if (textBox2.Text == "")
+           
+            if (PasswordTextBox.Text == "")
             {
-                PasswordRequired.Visible = true;
+               
                 isValid = false;
 
             }
-            else {
-                PasswordRequired.Visible = false;
-            }
+            
             if (isValid)
             {
                 // ✅ All fields are valid — do your action here
@@ -58,5 +54,6 @@ namespace auth
                 // or save data, open another form, etc.
             }
         }
+
     }
 }
