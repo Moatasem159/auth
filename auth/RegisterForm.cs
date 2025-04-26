@@ -20,41 +20,41 @@ namespace auth
         {
           
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void RegisterButton_Click(object sender, EventArgs e)
         {
             bool isValid = true;
 
             if (string.IsNullOrWhiteSpace(NameTextBox.Text))
             {
-                
+
                 isValid = false;
             }
-    
+
             if (string.IsNullOrWhiteSpace(DepartmentTextBox.Text))
             {
-               
+
                 isValid = false;
             }
-            
+
 
             if (string.IsNullOrWhiteSpace(PhoneTextBox.Text))
             {
-               
+
                 isValid = false;
             }
-          
+
             if (string.IsNullOrWhiteSpace(EmailTextBox.Text))
             {
-               
+
                 isValid = false;
             }
-    
+
             if (string.IsNullOrWhiteSpace(PasswordTextBox.Text))
             {
-               
+
                 isValid = false;
             }
-          
+
             if (isValid)
             {
                 // ✅ All fields are valid — do your action here
@@ -63,16 +63,11 @@ namespace auth
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
             LoginForm form1 = new LoginForm();
             this.Hide();
             form1.Show();
-        }
-
-        private void NameTextBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

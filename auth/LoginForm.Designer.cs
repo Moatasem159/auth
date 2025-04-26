@@ -34,15 +34,17 @@
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LoginButton = new System.Windows.Forms.Button();
-            this.RegisterButton = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.LoginButton = new auth.CustomButton();
+            this.RegisterButton = new auth.CustomButton();
             this.SuspendLayout();
             // 
             // title
             // 
+            this.title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.title.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.title.Location = new System.Drawing.Point(435, 118);
+            this.title.Location = new System.Drawing.Point(441, 80);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(125, 41);
@@ -53,7 +55,7 @@
             // EmailTextBox
             // 
             this.EmailTextBox.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.EmailTextBox.Location = new System.Drawing.Point(380, 212);
+            this.EmailTextBox.Location = new System.Drawing.Point(380, 188);
             this.EmailTextBox.Margin = new System.Windows.Forms.Padding(8);
             this.EmailTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.EmailTextBox.MinimumSize = new System.Drawing.Size(250, 30);
@@ -65,7 +67,7 @@
             // PasswordTextBox
             // 
             this.PasswordTextBox.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.PasswordTextBox.Location = new System.Drawing.Point(380, 289);
+            this.PasswordTextBox.Location = new System.Drawing.Point(380, 270);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.PasswordTextBox.MinimumSize = new System.Drawing.Size(250, 30);
@@ -78,7 +80,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label1.Location = new System.Drawing.Point(376, 187);
+            this.label1.Location = new System.Drawing.Point(376, 159);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 21);
@@ -90,7 +92,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label2.Location = new System.Drawing.Point(376, 264);
+            this.label2.Location = new System.Drawing.Point(376, 245);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 21);
@@ -101,36 +103,44 @@
             // LoginButton
             // 
             this.LoginButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.LoginButton.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.LoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.LoginButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.LoginButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.LoginButton.BorderRadius = 8;
+            this.LoginButton.BorderSize = 0;
             this.LoginButton.FlatAppearance.BorderSize = 0;
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginButton.Font = new System.Drawing.Font("Tahoma", 12F);
             this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Location = new System.Drawing.Point(380, 343);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(4);
+            this.LoginButton.Location = new System.Drawing.Point(380, 329);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(250, 42);
-            this.LoginButton.TabIndex = 2;
+            this.LoginButton.Size = new System.Drawing.Size(250, 45);
+            this.LoginButton.TabIndex = 4;
             this.LoginButton.Text = "Login";
+            this.LoginButton.TextColor = System.Drawing.Color.White;
             this.LoginButton.UseVisualStyleBackColor = false;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // RegisterButton
             // 
             this.RegisterButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.RegisterButton.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.RegisterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RegisterButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.RegisterButton.BorderRadius = 8;
+            this.RegisterButton.BorderSize = 0;
+            this.RegisterButton.FlatAppearance.BorderSize = 0;
             this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegisterButton.Font = new System.Drawing.Font("Tahoma", 12F);
             this.RegisterButton.ForeColor = System.Drawing.Color.White;
-            this.RegisterButton.Location = new System.Drawing.Point(380, 408);
-            this.RegisterButton.Margin = new System.Windows.Forms.Padding(4);
+            this.RegisterButton.Location = new System.Drawing.Point(380, 398);
             this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(250, 42);
-            this.RegisterButton.TabIndex = 3;
+            this.RegisterButton.Size = new System.Drawing.Size(250, 45);
+            this.RegisterButton.TabIndex = 4;
             this.RegisterButton.Text = "Register";
+            this.RegisterButton.TextColor = System.Drawing.Color.White;
             this.RegisterButton.UseVisualStyleBackColor = false;
-            this.RegisterButton.Click += new System.EventHandler(this.button2_Click);
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // LoginForm
             // 
@@ -168,9 +178,9 @@
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button LoginButton;
-        private System.Windows.Forms.Button RegisterButton;
         private System.Windows.Forms.ToolTip toolTip1;
+        private CustomButton LoginButton;
+        private CustomButton RegisterButton;
     }
 }
 

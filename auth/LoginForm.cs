@@ -19,34 +19,24 @@ namespace auth
 
         private void login_Load(object sender, EventArgs e)
         {
-            this.Select();
-
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            RegisterForm form2 = new RegisterForm();
-            this.Hide();
-            form2.Show();
-        }
-
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
             bool isValid = true;
             if (EmailTextBox.Text == "")
             {
-             
+
                 isValid = false;
             }
-           
+
             if (PasswordTextBox.Text == "")
             {
-               
+
                 isValid = false;
 
             }
-            
+
             if (isValid)
             {
                 // ✅ All fields are valid — do your action here
@@ -55,5 +45,11 @@ namespace auth
             }
         }
 
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            RegisterForm form2 = new RegisterForm();
+            this.Hide();
+            form2.Show();
+        }
     }
 }

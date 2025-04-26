@@ -34,18 +34,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.DepartmentTextBox = new System.Windows.Forms.TextBox();
             this.PhoneTextBox = new System.Windows.Forms.TextBox();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
+            this.RegisterButton = new auth.CustomButton();
+            this.LoginButton = new auth.CustomButton();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
             this.label1.Location = new System.Drawing.Point(402, 48);
             this.label1.Name = "label1";
@@ -104,34 +103,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Password";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(218, 336);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(602, 38);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(218, 412);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(602, 38);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "login";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // NameTextBox
             // 
             this.NameTextBox.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -140,7 +111,7 @@
             this.NameTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.NameTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(250, 30);
+            this.NameTextBox.Size = new System.Drawing.Size(250, 32);
             this.NameTextBox.TabIndex = 0;
             // 
             // EmailTextBox
@@ -151,7 +122,7 @@
             this.EmailTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.EmailTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(250, 30);
+            this.EmailTextBox.Size = new System.Drawing.Size(250, 32);
             this.EmailTextBox.TabIndex = 1;
             // 
             // DepartmentTextBox
@@ -162,8 +133,8 @@
             this.DepartmentTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.DepartmentTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.DepartmentTextBox.Name = "DepartmentTextBox";
-            this.DepartmentTextBox.Size = new System.Drawing.Size(250, 30);
-            this.DepartmentTextBox.TabIndex = 3;
+            this.DepartmentTextBox.Size = new System.Drawing.Size(250, 32);
+            this.DepartmentTextBox.TabIndex = 4;
             // 
             // PhoneTextBox
             // 
@@ -173,7 +144,7 @@
             this.PhoneTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.PhoneTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.PhoneTextBox.Name = "PhoneTextBox";
-            this.PhoneTextBox.Size = new System.Drawing.Size(250, 30);
+            this.PhoneTextBox.Size = new System.Drawing.Size(250, 32);
             this.PhoneTextBox.TabIndex = 2;
             // 
             // PasswordTextBox
@@ -185,8 +156,48 @@
             this.PasswordTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.Size = new System.Drawing.Size(250, 30);
+            this.PasswordTextBox.Size = new System.Drawing.Size(250, 32);
             this.PasswordTextBox.TabIndex = 4;
+            // 
+            // RegisterButton
+            // 
+            this.RegisterButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.RegisterButton.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.RegisterButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.RegisterButton.BorderRadius = 8;
+            this.RegisterButton.BorderSize = 0;
+            this.RegisterButton.FlatAppearance.BorderSize = 0;
+            this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegisterButton.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.RegisterButton.ForeColor = System.Drawing.Color.White;
+            this.RegisterButton.Location = new System.Drawing.Point(371, 342);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.Size = new System.Drawing.Size(304, 49);
+            this.RegisterButton.TabIndex = 5;
+            this.RegisterButton.Text = "Register";
+            this.RegisterButton.TextColor = System.Drawing.Color.White;
+            this.RegisterButton.UseVisualStyleBackColor = false;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.LoginButton.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.LoginButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.LoginButton.BorderRadius = 8;
+            this.LoginButton.BorderSize = 0;
+            this.LoginButton.FlatAppearance.BorderSize = 0;
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.LoginButton.ForeColor = System.Drawing.Color.White;
+            this.LoginButton.Location = new System.Drawing.Point(371, 409);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(304, 49);
+            this.LoginButton.TabIndex = 6;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.TextColor = System.Drawing.Color.White;
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // RegisterForm
             // 
@@ -194,13 +205,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.LoginButton);
+            this.Controls.Add(this.RegisterButton);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.DepartmentTextBox);
             this.Controls.Add(this.PhoneTextBox);
             this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.NameTextBox);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -228,12 +239,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.TextBox DepartmentTextBox;
         private System.Windows.Forms.TextBox PhoneTextBox;
         private System.Windows.Forms.TextBox PasswordTextBox;
+        private CustomButton RegisterButton;
+        private CustomButton LoginButton;
     }
 }
