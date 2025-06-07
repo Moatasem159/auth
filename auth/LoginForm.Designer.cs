@@ -43,11 +43,11 @@
             // 
             this.title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.title.Font = new System.Drawing.Font("Tahoma", 20F);
+            this.title.Font = new System.Drawing.Font("Cairo", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.Location = new System.Drawing.Point(441, 80);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(125, 41);
+            this.title.Size = new System.Drawing.Size(125, 59);
             this.title.TabIndex = 0;
             this.title.Text = "Sign in";
             this.title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,7 +60,7 @@
             this.EmailTextBox.MaximumSize = new System.Drawing.Size(250, 30);
             this.EmailTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(250, 30);
+            this.EmailTextBox.Size = new System.Drawing.Size(250, 32);
             this.EmailTextBox.TabIndex = 0;
             this.toolTip1.SetToolTip(this.EmailTextBox, "Enter your email");
             // 
@@ -73,17 +73,17 @@
             this.PasswordTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.Size = new System.Drawing.Size(250, 30);
+            this.PasswordTextBox.Size = new System.Drawing.Size(250, 32);
             this.PasswordTextBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label1.Location = new System.Drawing.Point(376, 159);
+            this.label1.Font = new System.Drawing.Font("Cairo", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(374, 146);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 21);
+            this.label1.Size = new System.Drawing.Size(57, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Email";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,11 +91,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label2.Location = new System.Drawing.Point(376, 245);
+            this.label2.Font = new System.Drawing.Font("Cairo", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(374, 232);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 21);
+            this.label2.Size = new System.Drawing.Size(91, 34);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,7 +110,7 @@
             this.LoginButton.BorderSize = 0;
             this.LoginButton.FlatAppearance.BorderSize = 0;
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginButton.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.LoginButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.ForeColor = System.Drawing.Color.White;
             this.LoginButton.Location = new System.Drawing.Point(380, 329);
             this.LoginButton.Name = "LoginButton";
@@ -131,7 +131,7 @@
             this.RegisterButton.BorderSize = 0;
             this.RegisterButton.FlatAppearance.BorderSize = 0;
             this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RegisterButton.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.RegisterButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterButton.ForeColor = System.Drawing.Color.White;
             this.RegisterButton.Location = new System.Drawing.Point(380, 398);
             this.RegisterButton.Name = "RegisterButton";
