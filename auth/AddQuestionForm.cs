@@ -54,12 +54,14 @@
         /// <param name="e">The e<see cref="EventArgs"/></param>
         private void AddNewQuestionButton_Click(object sender, EventArgs e)
         {
-            if (QuestionTextBox.Text.Length > 0)
+            if (!string.IsNullOrWhiteSpace(QuestionTextBox.Text)
+                && QuestionTypeComboBox.SelectedIndex >= 0
+                && AnswersList.Items.Count > 0)
             {
                 Question question = new Question
                 {
                     SubjectId = SubjectIdTextBox.Text,
-                    QuestionType = QuestionTypeTextBox.Text,
+                    QuestionType = QuestionTypeComboBox.Text,
                     QuestionText = QuestionTextBox.Text
                 };
 
@@ -72,19 +74,28 @@
                     };
 
                     question.Answers.Add(answer);
-                    questions.Add(question);
                 }
+
+                questions.Add(question);
+
+                // Clear input fields
                 QuestionTextBox.Text = "";
-                QuestionTypeTextBox.Text = "";
+                QuestionTypeComboBox.SelectedIndex = -1;
                 AnswersList.Items.Clear();
 
+                // Add question to list view
                 ListViewItem questionItem = new ListViewItem(question.QuestionText);
                 questionItem.SubItems.Add(question.QuestionType);
                 string answersText = string.Join(", ", question.Answers.Select(a => $"{a.AnswerText} ({a.IsCorrect})"));
                 questionItem.SubItems.Add(answersText);
                 QuestionListView.Items.Add(questionItem);
             }
+            else
+            {
+                MessageBox.Show("Please fill in the question, select a type, and add at least one answer.");
+            }
         }
+
 
         /// <summary>
         /// The AddAnswerButton_Click
