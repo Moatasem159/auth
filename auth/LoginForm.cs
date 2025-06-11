@@ -47,7 +47,7 @@ namespace auth
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            RegisterForm form2 = new RegisterForm();
+            RegisterationForm form2 = new RegisterationForm();
             this.Hide();
             form2.Show();
         }
