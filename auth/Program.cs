@@ -16,7 +16,7 @@ namespace auth
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegisterationForm());
+            Application.Run(new SubjectsManager());
         }
     }
 }
