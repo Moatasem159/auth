@@ -41,13 +41,15 @@
             this.AddButton = new auth.CustomButton();
             this.ClearButton = new auth.CustomButton();
             this.DeleteButton = new auth.CustomButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SubjectCodeIDLabel
             // 
             this.SubjectCodeIDLabel.AutoSize = true;
             this.SubjectCodeIDLabel.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubjectCodeIDLabel.Location = new System.Drawing.Point(12, 37);
+            this.SubjectCodeIDLabel.Location = new System.Drawing.Point(6, 47);
             this.SubjectCodeIDLabel.Name = "SubjectCodeIDLabel";
             this.SubjectCodeIDLabel.Size = new System.Drawing.Size(150, 37);
             this.SubjectCodeIDLabel.TabIndex = 0;
@@ -55,7 +57,8 @@
             // 
             // SubjectIdTextBox
             // 
-            this.SubjectIdTextBox.Location = new System.Drawing.Point(181, 47);
+            this.SubjectIdTextBox.Location = new System.Drawing.Point(175, 51);
+            this.SubjectIdTextBox.Multiline = true;
             this.SubjectIdTextBox.Name = "SubjectIdTextBox";
             this.SubjectIdTextBox.Size = new System.Drawing.Size(150, 24);
             this.SubjectIdTextBox.TabIndex = 1;
@@ -64,7 +67,7 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLabel.Location = new System.Drawing.Point(94, 91);
+            this.NameLabel.Location = new System.Drawing.Point(88, 89);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(68, 37);
             this.NameLabel.TabIndex = 0;
@@ -72,7 +75,8 @@
             // 
             // NameTextBox
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(181, 101);
+            this.NameTextBox.Location = new System.Drawing.Point(175, 96);
+            this.NameTextBox.Multiline = true;
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(150, 24);
             this.NameTextBox.TabIndex = 2;
@@ -81,7 +85,7 @@
             // 
             this.DescriptionLabel.AutoSize = true;
             this.DescriptionLabel.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescriptionLabel.Location = new System.Drawing.Point(47, 152);
+            this.DescriptionLabel.Location = new System.Drawing.Point(41, 136);
             this.DescriptionLabel.Name = "DescriptionLabel";
             this.DescriptionLabel.Size = new System.Drawing.Size(115, 37);
             this.DescriptionLabel.TabIndex = 0;
@@ -89,17 +93,17 @@
             // 
             // DescriptionTextBox
             // 
-            this.DescriptionTextBox.Location = new System.Drawing.Point(181, 162);
+            this.DescriptionTextBox.Location = new System.Drawing.Point(175, 148);
             this.DescriptionTextBox.Multiline = true;
             this.DescriptionTextBox.Name = "DescriptionTextBox";
-            this.DescriptionTextBox.Size = new System.Drawing.Size(150, 60);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(503, 60);
             this.DescriptionTextBox.TabIndex = 3;
             // 
             // InstructorIDLabel
             // 
             this.InstructorIDLabel.AutoSize = true;
             this.InstructorIDLabel.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InstructorIDLabel.Location = new System.Drawing.Point(443, 37);
+            this.InstructorIDLabel.Location = new System.Drawing.Point(399, 38);
             this.InstructorIDLabel.Name = "InstructorIDLabel";
             this.InstructorIDLabel.Size = new System.Drawing.Size(123, 37);
             this.InstructorIDLabel.TabIndex = 4;
@@ -107,17 +111,19 @@
             // 
             // InstructorIDTextBox
             // 
-            this.InstructorIDTextBox.Location = new System.Drawing.Point(597, 47);
+            this.InstructorIDTextBox.Location = new System.Drawing.Point(528, 44);
+            this.InstructorIDTextBox.Multiline = true;
             this.InstructorIDTextBox.Name = "InstructorIDTextBox";
             this.InstructorIDTextBox.ReadOnly = true;
             this.InstructorIDTextBox.Size = new System.Drawing.Size(150, 24);
             this.InstructorIDTextBox.TabIndex = 4;
+            this.InstructorIDTextBox.TextChanged += new System.EventHandler(this.InstructorIDTextBox_TextChanged);
             // 
             // QuestionsBanksLabel
             // 
             this.QuestionsBanksLabel.AutoSize = true;
             this.QuestionsBanksLabel.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuestionsBanksLabel.Location = new System.Drawing.Point(407, 91);
+            this.QuestionsBanksLabel.Location = new System.Drawing.Point(363, 89);
             this.QuestionsBanksLabel.Name = "QuestionsBanksLabel";
             this.QuestionsBanksLabel.Size = new System.Drawing.Size(159, 37);
             this.QuestionsBanksLabel.TabIndex = 5;
@@ -125,7 +131,8 @@
             // 
             // QuestionsBanksId
             // 
-            this.QuestionsBanksId.Location = new System.Drawing.Point(597, 101);
+            this.QuestionsBanksId.Location = new System.Drawing.Point(528, 96);
+            this.QuestionsBanksId.Multiline = true;
             this.QuestionsBanksId.Name = "QuestionsBanksId";
             this.QuestionsBanksId.ReadOnly = true;
             this.QuestionsBanksId.Size = new System.Drawing.Size(150, 24);
@@ -142,7 +149,7 @@
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddButton.ForeColor = System.Drawing.Color.White;
-            this.AddButton.Location = new System.Drawing.Point(170, 287);
+            this.AddButton.Location = new System.Drawing.Point(39, 295);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(150, 45);
             this.AddButton.TabIndex = 6;
@@ -161,7 +168,7 @@
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearButton.ForeColor = System.Drawing.Color.White;
-            this.ClearButton.Location = new System.Drawing.Point(554, 287);
+            this.ClearButton.Location = new System.Drawing.Point(598, 295);
             this.ClearButton.Margin = new System.Windows.Forms.Padding(1);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(150, 45);
@@ -181,7 +188,7 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteButton.Location = new System.Drawing.Point(363, 287);
+            this.DeleteButton.Location = new System.Drawing.Point(318, 295);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(40, 3, 40, 3);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(150, 45);
@@ -190,31 +197,43 @@
             this.DeleteButton.TextColor = System.Drawing.Color.White;
             this.DeleteButton.UseVisualStyleBackColor = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.DescriptionTextBox);
+            this.groupBox1.Controls.Add(this.DescriptionLabel);
+            this.groupBox1.Controls.Add(this.NameLabel);
+            this.groupBox1.Controls.Add(this.NameTextBox);
+            this.groupBox1.Controls.Add(this.InstructorIDLabel);
+            this.groupBox1.Controls.Add(this.QuestionsBanksLabel);
+            this.groupBox1.Controls.Add(this.QuestionsBanksId);
+            this.groupBox1.Controls.Add(this.InstructorIDTextBox);
+            this.groupBox1.Controls.Add(this.SubjectIdTextBox);
+            this.groupBox1.Controls.Add(this.SubjectCodeIDLabel);
+            this.groupBox1.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(39, 26);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(709, 240);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Subject Information";
+            // 
             // SubjectsManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(800, 399);
+            this.ClientSize = new System.Drawing.Size(787, 399);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.QuestionsBanksId);
-            this.Controls.Add(this.QuestionsBanksLabel);
-            this.Controls.Add(this.InstructorIDTextBox);
-            this.Controls.Add(this.InstructorIDLabel);
-            this.Controls.Add(this.DescriptionTextBox);
-            this.Controls.Add(this.DescriptionLabel);
-            this.Controls.Add(this.NameTextBox);
-            this.Controls.Add(this.NameLabel);
-            this.Controls.Add(this.SubjectIdTextBox);
-            this.Controls.Add(this.SubjectCodeIDLabel);
             this.Name = "SubjectsManager";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Subjects Manager";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -233,5 +252,6 @@
         private CustomButton AddButton;
         private CustomButton ClearButton;
         private CustomButton DeleteButton;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

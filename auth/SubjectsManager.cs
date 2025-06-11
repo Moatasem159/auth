@@ -16,5 +16,10 @@ namespace auth
         {
             InitializeComponent();
         }
+
+        private void InstructorIDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
