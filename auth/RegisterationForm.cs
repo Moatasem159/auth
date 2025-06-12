@@ -20,5 +20,10 @@ namespace auth
         {
           
         }
+
+        private void PhoneTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

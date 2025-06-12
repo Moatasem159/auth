@@ -69,7 +69,7 @@
             this.SubjectsButton.BorderSize = 0;
             this.SubjectsButton.FlatAppearance.BorderSize = 0;
             this.SubjectsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubjectsButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectsButton.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubjectsButton.ForeColor = System.Drawing.Color.White;
             this.SubjectsButton.Location = new System.Drawing.Point(104, 133);
             this.SubjectsButton.Margin = new System.Windows.Forms.Padding(60, 0, 60, 40);
@@ -89,7 +89,7 @@
             this.QuestionsBanksButton.BorderSize = 0;
             this.QuestionsBanksButton.FlatAppearance.BorderSize = 0;
             this.QuestionsBanksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.QuestionsBanksButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuestionsBanksButton.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuestionsBanksButton.ForeColor = System.Drawing.Color.White;
             this.QuestionsBanksButton.Location = new System.Drawing.Point(104, 282);
             this.QuestionsBanksButton.Margin = new System.Windows.Forms.Padding(60, 0, 60, 40);
@@ -109,7 +109,7 @@
             this.TestsBanksButton.BorderSize = 0;
             this.TestsBanksButton.FlatAppearance.BorderSize = 0;
             this.TestsBanksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TestsBanksButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestsBanksButton.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TestsBanksButton.ForeColor = System.Drawing.Color.White;
             this.TestsBanksButton.Location = new System.Drawing.Point(104, 431);
             this.TestsBanksButton.Margin = new System.Windows.Forms.Padding(0);

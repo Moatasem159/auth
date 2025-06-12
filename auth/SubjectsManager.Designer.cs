@@ -147,7 +147,7 @@
             this.AddButton.BorderSize = 0;
             this.AddButton.FlatAppearance.BorderSize = 0;
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddButton.ForeColor = System.Drawing.Color.White;
             this.AddButton.Location = new System.Drawing.Point(39, 295);
             this.AddButton.Name = "AddButton";
@@ -166,7 +166,7 @@
             this.ClearButton.BorderSize = 0;
             this.ClearButton.FlatAppearance.BorderSize = 0;
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClearButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearButton.ForeColor = System.Drawing.Color.White;
             this.ClearButton.Location = new System.Drawing.Point(598, 295);
             this.ClearButton.Margin = new System.Windows.Forms.Padding(1);
@@ -186,7 +186,7 @@
             this.DeleteButton.BorderSize = 0;
             this.DeleteButton.FlatAppearance.BorderSize = 0;
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteButton.Font = new System.Drawing.Font("Cairo SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.Font = new System.Drawing.Font("Cairo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
             this.DeleteButton.Location = new System.Drawing.Point(318, 295);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(40, 3, 40, 3);
